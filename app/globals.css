@@ -30,18 +30,45 @@ body {
 }
 
 .fc .fc-button {
-  background-color: #2563eb;
-  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .fc .fc-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
 }
 
 .fc .fc-button-primary:not(:disabled):hover {
   background-color: #1d4ed8;
 }
 
+.fc {
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .fc {
+    font-size: 14px;
+  }
+}
+
+.fc-daygrid-day {
+  min-height: 80px;
+}
+
+@media (max-width: 768px) {
+  .fc-daygrid-day {
+    min-height: 70px;
+  }
+}
+
 .fc-event {
   border-radius: 6px;
-  padding: 2px;
-  font-weight: 500;
+  padding: 4px;
+  font-size: 12px;
 }
 
 body > div:empty {
